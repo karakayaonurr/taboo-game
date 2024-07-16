@@ -1,0 +1,120 @@
+/* src/components/GameBoard.css */
+
+.game-board {
+    font-family: 'Comic Sans MS', cursive;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.setup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.setup-item {
+    margin-bottom: 10px;
+}
+
+.setup-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.setup-item select, .setup-item input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 15px 30px; /* Daha büyük boyut */
+    margin-right: 10px;
+    font-size: 18px; /* Daha büyük yazı boyutu */
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Yuvarlak kenarlıklar */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    filter: brightness(1.1); /* Hover efekti */
+}
+
+.pass-button {
+    background-color: #ff9800; /* Turuncu */
+    color: white;
+}
+
+.taboo-button {
+    background-color: #e53935; /* Kırmızı */
+    color: white;
+}
+
+.correct-button {
+    background-color: #4caf50; /* Yeşil */
+    color: white;
+}
+
+.pass-button.disabled {
+    background-color: #ccc; /* Gri tonu */
+    color: #666; /* Koyu gri yazı rengi */
+    cursor: not-allowed; /* Kullanılamaz imleç */
+    pointer-events: none; /* Tıklamayı engelle */
+}
+
+.timer {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    filter: brightness(1.1);
+}
+
+.scores {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.turn-info {
+    margin-top: 20px;
+    font-size: 18px;
+}

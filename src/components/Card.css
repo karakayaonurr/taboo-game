@@ -1,0 +1,81 @@
+/* src/components/Card.css */
+
+.card {
+    background-color: #333; /* Koyu arka plan */
+    color: #f0f0f0; /* Açık renkli yazılar */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Köşeleri yuvarlak yap */
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* İhtiyaca göre genişliği ayarlayın */
+    text-align: center;
+    margin: 0 auto; /* Ekranın ortasına hizalamak için */
+    position: relative; /* Butonları konumlamak için */
+}
+
+.main-word {
+    font-size: 48px; /* Büyük font boyutu */
+    font-weight: bold; /* Kalın yazı */
+    font-style: italic; /* İtalik yazı */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Büyük harfe dönüştürme */
+    text-decoration: underline; /* Altı çizili */
+}
+
+.separator {
+    border: none;
+    border-bottom: 2px solid white; /* Ayıran beyaz çizgi */
+    width: 80%;
+    margin: 10px auto;
+}
+
+.forbidden-words {
+    margin-top: 20px;
+}
+
+.forbidden-word {
+    font-size: 20px; /* Daha küçük font boyutu için */
+    text-transform: uppercase; /* Büyük harfe dönüştürme */
+}
+
+.centered {
+    margin: 0 auto; /* Ekranın ortasına hizalamak için */
+}
+
+.action-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+}
+
+.action-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.action-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pass {
+    margin-right: auto;
+}
+
+.taboo {
+    margin: 0 auto;
+}
+
+.correct {
+    margin-left: auto;
+}
